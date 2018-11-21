@@ -1,0 +1,46 @@
+$orange: #EA8024;
+@mixin heading{
+	font-family: 'Josefin Sans', sans-serif;
+	text-transform: uppercase;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	background-color: white;
+	.landing{
+		height: 100vh;
+		background-image: url('../images/homepage_bg.jpg');
+    	background-size: auto 100vw;
+		background-repeat: no-repeat;
+		.logo{
+			position: absolute;
+			max-height: 10vh;
+			left: 2vh;
+			bottom: 2vh;
+		}
+		header{
+			h1{
+				@include heading;
+				font-size: 60px;
+				position: absolute;
+				bottom: 30vh;
+				left: 2vh; 
+			}
+		}
+		@import 'navbar';
+	}
+	main{
+		padding: 20vh;
+		h1{
+			font-family: 'Josefin Sans', sans-serif;
+			text-align: center;
+		}
+		p {
+			text-align: justify;
+		}
+	}
+	@import 'footer';
+}

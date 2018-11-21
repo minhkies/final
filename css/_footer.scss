@@ -1,0 +1,43 @@
+footer {
+	background-color: black;
+	width: 100vw;
+	height: 70vh;
+	z-index: -100;
+	img{
+		display: block;
+	    margin: 2vh auto;
+		height: 25vh;
+	}
+	h1{
+		text-align: center;
+		@include heading;
+		color: white;
+		line-height: 90%;
+	}
+	p{
+		margin: 10vh 0;
+		text-align: center;
+		color: white;
+	}
+
+	hr{
+		padding: 0;
+		margin: 0;
+		border-width: 0;
+		height: 0.5px;
+		background: white;
+		opacity: 0.5;
+
+	}
+	.subfooter {
+		font-size: 8pt;
+		margin: 0 37.5vw;
+		padding: 0;
+		display: inline-block;
+		height: 10vh;
+		line-height: 10vh;
+		opacity: 0.5;
+		width: 25vw;
+		color: white;
+	}
+}
