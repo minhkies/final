@@ -7,9 +7,11 @@ $orange: #EA8024;
 	height: 10vh;
 	transition: .3s;
 	&.black{
+		width: 100%;
 		background: white;
 	}
 	&_left {
+		width: 100%;
 		padding: 1vh;
 		height: 8vh;
 		& .logo {
@@ -40,7 +42,7 @@ header {
 	height: 50vh;
 	background-image: url('../images/menu_banner.jpg');
 	background-size: cover;
-	background-position: center;
+	background-position: left center;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -54,13 +56,13 @@ header {
 		z-index: -1;
 		& > a {
 			text-decoration: none;
-			font-size: 4vh;
+			font-size: 3.5vh;
 			color: black;
 			font-family: 'Josefin Sans', sans-serif;
 			display: inline-block;
 			padding: 0 1vh;
-		    height: 4vh;
-		    line-height: 4vh;
+		    height: 6vh;
+		    line-height: 6vh;
 		    vertical-align: middle;
 		    &:hover {
 				color: $orange;
@@ -68,6 +70,7 @@ header {
 		}
 	}
 	.sticky {
+		width: 100%;
 	    position: fixed;
 	    top: 10vh;
 	    background-color: white;

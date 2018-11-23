@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Schedule - COMP1950</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/schedule.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto:100" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.toggle').click(function () {
+				$('.toggle').toggleClass('active')
+				$('.overlay').toggleClass('active')
+				$('nav').toggleClass('active')
+			})
+		})
+	</script>
+    <script type="text/javascript">
+    	$(window).on('scroll', function(){
+    		if ($(window).scrollTop()) {
+    			$('.navbar').addClass('black');
+    		}
+    		else {
+    			$('.navbar').removeClass('black')
+    		}
+    	})
+    </script>
+    <script type="text/javascript">
+	$(window).scroll(function(){
+    if ($(window).scrollTop() >= $(window).height()*0.35) {
+        $('.subheading').addClass('sticky');
+    }
+    else {
+        $('.subheading').removeClass('sticky');
+    }
+});
+</script>
+</head>
+<body>
+		<div class="navbar">
+			<div class="navbar_left">
+			<img class="logo" src="images/logo.png" atl="logo">
+			<a href="index.html">Web Development & Design 2</a>
+			<div class="toggle"></div>
+			<div class="overlay"></div>
+			</div>
+		</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="schedule.html">Schedule</a>
+					</li>
+					<li>
+						<a href="lessons.html">Lessons</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</nav>
+<header>
+	<div class="subheading">
+	<a href="ourstory.html">Schedule</a>
+	</div>
+</header>
+<div class="main">
+	<section class="right schedule">
+		<div class="right_overlay">
+			<div class="right_box_1"></div>
+			<div class="right_box_2"></div>
+			<div class="right_card">
+				<h1>Course Schedule</h1>
+				<table>
+				   <tbody>
+				      <tr>
+				         <th>
+				            <p><strong>Date</strong></p>
+				         </th>
+				         <th>
+				            <p><strong>Material Covered</strong></p>
+				         </th>
+				         <th>
+				            <p><strong>Assignment</strong></p>
+				         </th>
+				         <th>
+				            <p><strong>Due Date</strong></p>
+				         </th>
+				      </tr>
+				      <tr>
+				         <td>
+				            <p>Session 1</p>
+				         </td>
+				         <td>
+				            <p> Course introduction and setup, tools and standards, HTML/ CSS review</p>
+				         </td>
+				         <td>
+				            <p>Assignment 1</p>
+				         </td>
+				         <td>
+				            <p>Session 2</p>
+				         </td>
+				      </tr>
+				      <tr>
+				         <td>
+				            <p>Session 2</p>
+				         </td>
+				         <td>
+				            <p>CSS @font-face , responsive web design</p>
+				         </td>
+				         <td>
+				            <p>Assignment 2</p>
+				         </td>
+				         <td>
+				            <p>Session 3</p>
+				         </td>
+				      </tr>
+				      <tr>
+				         <td>
+				            <p>Session 3</p>
+				         </td>
+				         <td>
+				            <p>Flexbox</p>
+				         </td>
+				         <td>
+				            <p>Assignment 3</p>
+				         </td>
+				         <td>
+				            <p>Session 4</p>
+				         </td>
+				      </tr>
+				      <tr>
+				         <td>
+				            <p>Session 4</p>
+				         </td>
+				         <td>
+				            <p>CSS3 styling, transforms, transitions, animations</p>
+				         </td>
+				         <td>
+				            <p>Assignment 4</p>
+				         </td>
+				         <td>
+				            <p>Session 5</p>
+				         </td>
+				      </tr>
+				      <tr>
+				         <td>
+				            <p>Session 5</p>
+				         </td>
+				         <td>
+				            <p>Responsive images, mobile navigation systems</p>
+				         </td>
+				         <td>
+				            <p>Assignment 5
+							<br>
+				            Midterm project</p>
+				         </td>
+				         <td>
+				            <p>Session 6 (Assignment 5)
+				            <br>
+				            Session 7 (Midterm project)</p>
+				         </td>
+				      </tr>
+				      <tr>
+				         <td>
+				            <p>Session 6</p>
+				         </td>
+				         <td>
+				            <p>Midterm exam/ Midterm project time</p>
+				         </td>
+				         <td></td>
+				         <td></td>
+				      </tr>
+				      <tr>
+				         <td>
+				            <p>Session 7</p>
+				         </td>
+				         <td>
+				            <p>CSS grid</p>
+				         </td>
+				         <td>
+				            <p>Assignment 6</p>
+				         </td>
+				         <td>
+				            <p>Session 8</p>
+				         </td>
+				      </tr>
+				      <tr>
+				         <td>
+				            <p>Session 8</p>
+				         </td>
+				         <td>
+				            <p>SASS CSS preprocessor</p>
+				         </td>
+				         <td>
+				            <p>Assignment 7</p>
+				         </td>
+				         <td>
+				            <p>Session 9</p>
+				         </td>
+				      </tr>
+				      <tr>
+				         <td>
+				            <p>Session 9</p>
+				         </td>
+				         <td>
+				            <p>Collaborative development, Git and GitHub, group project announcement</p>
+				         </td>
+				         <td>
+				            <p>Final group project</p>
+				         </td>
+				         <td>
+				            <p>Session 12</p>
+				         </td>
+				      </tr>
+				      <tr>
+				         <td>
+				            <p>Session 10</p>
+				         </td>
+				         <td>
+				            <p>Development servers, htaccess, PHP, JavaScript</p>
+				         </td>
+				         <td></td>
+				         <td></td>
+				      </tr>
+				      <tr>
+				         <td>
+				            <p>Session 11</p>
+				         </td>
+				         <td>
+				            <p>Group project work</p>
+				         </td>
+				         <td>
+				            <p>Group project time</p>
+				         </td>
+				         <td>
+				            <p>Session 12</p>
+				         </td>
+				      </tr>
+				      <tr>
+				         <td>
+				            <p>Session 12</p>
+				         </td>
+				         <td>
+				            <p>Final exam</p>
+				         </td>
+				         <td></td>
+				         <td></td>
+				      </tr>
+				   </tbody>
+</table>
+			</div>
+		</div>
+	</section>
+	<br>
+	<br>
+	<br>
+	<footer>
+		<img src="./images/logo.png">
+		<h1>British Columbia Insitute of Technology</h1>
+		<p>3700 Willingdon Avenue, Burnaby BC V5G 3H2
+			<br>
+			Tel: +1 (604) 434-1610
+			<br>
+			Toll free: +1 (866) 434-1610
+		</p>
+		<p class="subfooter">Designed and Contented by Tim Hoang</p>
+	</footer>
+</div>
+</body>
+</html>
