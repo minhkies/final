@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Schedule - COMP1950</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/lessons.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto:100" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.toggle').click(function () {
+				$('.toggle').toggleClass('active')
+				$('.overlay').toggleClass('active')
+				$('nav').toggleClass('active')
+			})
+		})
+	</script>
+    <script type="text/javascript">
+    	$(window).on('scroll', function(){
+    		if ($(window).scrollTop()) {
+    			$('.navbar').addClass('black');
+    		}
+    		else {
+    			$('.navbar').removeClass('black')
+    		}
+    	})
+    </script>
+    <script type="text/javascript">
+	$(window).scroll(function(){
+    if ($(window).scrollTop() >= $(window).height()*0.35) {
+        $('.subheading').addClass('sticky');
+    }
+    else {
+        $('.subheading').removeClass('sticky');
+    }
+});
+</script>
+</head>
+<body>
+		<div class="navbar">
+			<div class="navbar_left">
+			<img class="logo" src="images/logo.png" atl="logo">
+			<a href="index.html">Web Development & Design 2</a>
+			<div class="toggle"></div>
+			<div class="overlay"></div>
+			</div>
+		</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="schedule.html">Schedule</a>
+					</li>
+					<li>
+						<a href="lessons.html">Lessons</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</nav>
+<header>
+	<div class="subheading">
+	<a href="lessons.html">Lessons</a>
+	<div class="subnav">
+		<ul>
+			<li><a href="lesson_one.html">Lesson 1</a></li>
+			<li><a href="lesson_two.html">Lesson 2</a></li>
+			<li><a href="lesson_three.html">Lesson 3</a></li>
+			<li><a href="#">Lesson 4</a></li>
+			<li><a href="#">Lesson 5</a></li>
+			<li><a href="#">Lesson 6</a></li>
+			<li><a href="#">Lesson 7</a></li>
+			<li><a href="#">Lesson 8</a></li>
+			<li><a href="#">Lesson 9</a></li>
+			<li><a href="#">Lesson 10</a></li>
+			<li><a href="#">Lesson 11</a></li>
+			<li><a href="#">Lesson 12</a></li>
+		</ul>
+	</div>
+	</div>
+</header>
+<div class="main">
+	<section>
+	<div class="left">
+		<img src="images/lessons.jpg">
+	</div>
+	<div class="right">
+				<h1>Lessons</h1>
+				<p>Click on the lesson to see notes</p>
+				<ul>
+					<li><a href="lesson_one.html">Lesson 1</a></li>
+					<li><a href="lesson_two.html">Lesson 2</a></li>
+					<li><a href="lesson_three.html">Lesson 3</a></li>
+					<li><a href="#">Lesson 4</a></li>
+					<li><a href="#">Lesson 5</a></li>
+					<li><a href="#">Lesson 6</a></li>
+					<li><a href="#">Lesson 7</a></li>
+					<li><a href="#">Lesson 8</a></li>
+					<li><a href="#">Lesson 9</a></li>
+					<li><a href="#">Lesson 10</a></li>
+					<li><a href="#">Lesson 11</a></li>
+					<li><a href="#">Lesson 12</a></li>
+				</ul>
+		</div>
+	</section>
+	<footer>
+		<img src="./images/logo.png">
+		<h1>British Columbia Insitute of Technology</h1>
+		<p>3700 Willingdon Avenue, Burnaby BC V5G 3H2
+			<br>
+			Tel: +1 (604) 434-1610
+			<br>
+			Toll free: +1 (866) 434-1610
+		</p>
+		<p class="subfooter">Designed and Contented by Tim Hoang</p>
+	</footer>
+</div>
+</body>
+</html>

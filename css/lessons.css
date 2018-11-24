@@ -1,0 +1,251 @@
+body, h1, h2, p {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  max-width: 100%;
+  overflow-x: hidden; }
+  body .toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    z-index: 100; }
+    body .toggle:before {
+      content: '+';
+      font-family: serif;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 50pt;
+      width: 100%;
+      height: 100%;
+      color: black;
+      text-align: center;
+      line-height: 50px;
+      transition: 0.5s; }
+    body .toggle.active:before {
+      transform: rotate(405deg);
+      background: black;
+      color: white;
+      border-radius: 50%; }
+  body .overlay {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    transition: transform 0.5s;
+    z-index: 97; }
+    body .overlay.active {
+      transform: scale(100, 100); }
+  body nav {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 99;
+    visibility: hidden; }
+    body nav.active {
+      visibility: visible;
+      transition-delay: 0.3s; }
+    body nav ul {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      padding: 0;
+      z-index: 97; }
+      body nav ul li {
+        list-style: none; }
+        body nav ul li a {
+          position: relative;
+          font-size: 30px;
+          text-decoration: none;
+          text-align: center;
+          font-family: 'Josefin Sans', sans-serif;
+          text-transform: uppercase;
+          color: black;
+          margin: 50px 0;
+          display: block;
+          text-shadow: 0 2px 5px rgba 0, 0, 0, 0.5; }
+          body nav ul li a:before {
+            content: '';
+            position: absolute;
+            bottom: -2vh;
+            left: -10px;
+            width: 110%;
+            height: 20px;
+            background: #EA8024;
+            z-index: 96;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s; }
+          body nav ul li a:hover:before {
+            transform: scaleX(1); }
+  body .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    transition: .3s; }
+    body .navbar.black {
+      width: 100%;
+      background: white; }
+    body .navbar_left {
+      width: 100%;
+      padding: 1vh;
+      height: 8vh; }
+      body .navbar_left .logo {
+        display: inline-block;
+        height: 8vh;
+        transition: .3s; }
+      body .navbar_left a {
+        text-decoration: none;
+        display: inline-block;
+        line-height: 8vh;
+        height: 8vh;
+        font-size: 5vh;
+        font-family: 'Josefin Sans', sans-serif;
+        text-transform: uppercase;
+        color: black;
+        vertical-align: top;
+        margin: 0;
+        padding: 0; }
+        body .navbar_left a:hover {
+          color: #EA8024; }
+  body header {
+    width: 100%;
+    height: 50vh;
+    background-image: url("../images/menu_banner.jpg");
+    background-size: cover;
+    background-position: left center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2; }
+    body header .subheading {
+      position: absolute;
+      height: 6vh;
+      width: 100%;
+      top: 44vh;
+      padding: 0;
+      z-index: -1; }
+      body header .subheading > a {
+        text-decoration: none;
+        font-size: 3.5vh;
+        color: black;
+        font-family: 'Josefin Sans', sans-serif;
+        display: inline-block;
+        padding: 0 1vh;
+        height: 6vh;
+        line-height: 6vh;
+        vertical-align: middle; }
+        body header .subheading > a:hover {
+          color: #EA8024; }
+    body header .sticky {
+      width: 100%;
+      position: fixed;
+      top: 10vh;
+      background-color: white; }
+    body header .subnav {
+      display: inline-block;
+      top: 0;
+      left: 10vw;
+      line-height: 6vh;
+      padding: 0;
+      margin: 0; }
+      body header .subnav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0; }
+        body header .subnav ul li {
+          padding: 0 1vh; }
+          body header .subnav ul li a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Roboto', sans-serif; }
+            body header .subnav ul li a:hover {
+              color: #EA8024; }
+  body .main {
+    position: absolute;
+    top: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: -10; }
+    body .main section {
+      max-width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); }
+      body .main section .left {
+        grid-column: 1/3; }
+        body .main section .left img {
+          object-fit: cover;
+          width: 100%;
+          max-height: 100%; }
+      body .main section .right {
+        grid-column: 3/4;
+        padding: 5vh;
+        padding-top: 0; }
+        body .main section .right h1 {
+          color: black;
+          font-family: 'Josefin Sans', sans-serif;
+          font-size: 5vh;
+          padding-top: 5vh; }
+        body .main section .right p {
+          font-style: italic; }
+        body .main section .right ul {
+          list-style-type: circle; }
+          body .main section .right ul li {
+            padding: 1vh 0; }
+            body .main section .right ul li a {
+              text-decoration: none; }
+              body .main section .right ul li a:hover {
+                color: orange; }
+    body .main footer {
+      background-color: lightgray;
+      width: 100%;
+      height: 70vh;
+      z-index: -100;
+      padding-bottom: 0; }
+      body .main footer img {
+        display: block;
+        margin: 2vh auto;
+        padding-top: 3vh;
+        height: 25vh; }
+      body .main footer h1 {
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        text-transform: uppercase;
+        line-height: 90%; }
+      body .main footer p {
+        color: black;
+        margin: 10vh 0;
+        text-align: center;
+        color: black; }
+      body .main footer .subfooter {
+        position: absolute;
+        bottom: 0;
+        font-size: 8pt;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        height: 10vh;
+        line-height: 10vh;
+        opacity: 0.5;
+        width: 100%;
+        background: black;
+        color: white; }
+
+/*# sourceMappingURL=lessons.css.map */
