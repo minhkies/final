@@ -122,6 +122,9 @@ body {
         vertical-align: top;
         margin: 0;
         padding: 0; }
+        @media only screen and (max-width: 650px) {
+          body .navbar_left a {
+            font-size: 1.0rem; } }
         body .navbar_left a:hover {
           color: #EA8024; }
   body header {
@@ -217,6 +220,9 @@ body {
           height: auto;
           margin: 0 auto;
           display: block; }
+          body .main section .content .photo img {
+            max-width: 100%;
+            height: auto; }
     body .main footer {
       background-color: lightgray;
       width: 100%;
@@ -251,5 +257,9 @@ body {
         width: 100%;
         background: black;
         color: white; }
+
+@media only screen and (max-width: 815px) {
+  .subnav {
+    visibility: hidden; } }
 
 /*# sourceMappingURL=lesson_content.css.map */

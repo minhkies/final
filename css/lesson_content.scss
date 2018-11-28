@@ -55,6 +55,10 @@ body{
 			    	height: auto;
 			    	margin: 0 auto;
 			    	display: block;
+						img{
+						max-width: 100%;
+						height: auto;
+					}
 			    }
 				}
 		}
@@ -62,6 +66,8 @@ body{
 	}
 
 }
-
-
-
+@media only screen and(max-width: 815px) {
+	.subnav {
+		visibility: hidden;
+	}
+}
