@@ -21,7 +21,7 @@ body{
 			grid-template-columns: repeat(12, 1fr);
 			grid-template-rows: 5vh 5vh 5vh auto 5vh;
 			.title {
-				z-index: -1;
+				z-index: 1;
 				grid-column: 3/9;
 				grid-row: 2/4;
 			    background-color: $orange;
@@ -33,11 +33,14 @@ body{
 			    	}
 				}
 			.content {
-				z-index: -2;
+				z-index: 0;
 				grid-column: 2/12;
 				grid-row: 3/5;
 			    padding: 50px 20px;
 			    background-color: #DDE6ED;
+			    a{
+					text-decoration: none;
+				}
 			    h2{
 			    	padding-top: 5vh;
 			    }

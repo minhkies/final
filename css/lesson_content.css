@@ -92,6 +92,7 @@ body {
           body nav ul li a:hover:before {
             transform: scaleX(1); }
   body .navbar {
+    z-index: 3;
     position: fixed;
     top: 0;
     left: 0;
@@ -132,14 +133,14 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -2; }
+    z-index: 2; }
     body header .subheading {
       position: absolute;
       height: 6vh;
       width: 100%;
       top: 44vh;
       padding: 0;
-      z-index: -1; }
+      z-index: 3; }
       body header .subheading > a {
         text-decoration: none;
         font-size: 3.5vh;
@@ -188,7 +189,7 @@ body {
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: 5vh 5vh 5vh auto 5vh; }
       body .main section .title {
-        z-index: -1;
+        z-index: 1;
         grid-column: 3/9;
         grid-row: 2/4;
         background-color: #EA8024;
@@ -198,11 +199,13 @@ body {
           font-family: 'Josefin Sans', sans-serif;
           font-size: 5vh; }
       body .main section .content {
-        z-index: -2;
+        z-index: 0;
         grid-column: 2/12;
         grid-row: 3/5;
         padding: 50px 20px;
         background-color: #DDE6ED; }
+        body .main section .content a {
+          text-decoration: none; }
         body .main section .content h2 {
           padding-top: 5vh; }
         body .main section .content p {
