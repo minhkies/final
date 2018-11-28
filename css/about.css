@@ -273,7 +273,6 @@ body {
     body .main footer {
       background-color: lightgray;
       width: 100%;
-      height: 70vh;
       z-index: -100;
       padding-bottom: 0; }
       body .main footer img {
@@ -292,8 +291,6 @@ body {
         text-align: center;
         color: black; }
       body .main footer .subfooter {
-        position: absolute;
-        bottom: 0;
         font-size: 8pt;
         padding: 0;
         margin: 0;
