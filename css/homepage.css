@@ -14,7 +14,7 @@ body {
       position: absolute;
       max-height: 10vh;
       left: 2vh;
-      bottom: 2vh; }
+      bottom: 80vh; }
     body .landing header h1 {
       font-family: 'Josefin Sans', sans-serif;
       text-transform: uppercase;
@@ -120,6 +120,14 @@ body {
               transform: scaleX(1); }
   body main {
     padding: 20vh; }
+    @media only screen and (max-width: 400px) {
+      body main {
+        padding: 10vh;
+        height: 90%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; } }
     body main h1 {
       font-family: 'Josefin Sans', sans-serif;
       text-align: center; }

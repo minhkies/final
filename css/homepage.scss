@@ -19,7 +19,7 @@ body{
 			position: absolute;
 			max-height: 10vh;
 			left: 2vh;
-			bottom: 2vh;
+			bottom: 80vh;
 		}
 		header{
 			h1{
@@ -31,7 +31,7 @@ body{
 					@media only screen and(max-width:560px ) {
 						font-size: 50px;
 						bottom: 40vh;
-						color: black;//white;
+						color: black;
 						/*
 						text-shadow:
 						-1px -1px 0 #000,
@@ -46,6 +46,14 @@ body{
 	}
 	main{
 		padding: 20vh;
+				@media only screen and(max-width:400px) {
+					padding: 10vh;
+					height: 90%;
+    			width:100%;
+    			display:flex;
+    			align-items: center;
+    			justify-content: center;
+				}
 		h1{
 			font-family: 'Josefin Sans', sans-serif;
 			text-align: center;

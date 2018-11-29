@@ -191,6 +191,9 @@ body {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: 5vh 5vh 5vh auto 5vh; }
+      @media only screen and (max-width: 600px) {
+        body .main section {
+          display: block; } }
       body .main section .title {
         z-index: 1;
         grid-column: 3/9;
@@ -201,6 +204,9 @@ body {
         body .main section .title h1 {
           font-family: 'Josefin Sans', sans-serif;
           font-size: 5vh; }
+          @media only screen and (max-width: 600px) {
+            body .main section .title h1 {
+              font-size: 3.5vh; } }
       body .main section .content {
         z-index: 0;
         grid-column: 2/12;
