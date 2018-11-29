@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Lessons - COMP1950</title>
+    <title>Contact - COMP1950</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/lessons.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto:100" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 	<script type="text/javascript">
@@ -35,6 +35,11 @@
         $('.subheading').removeClass('sticky');
     }
 });
+</script>
+<script>
+function myFunction() {
+    alert("Thank you! Your request has been sent!");
+}
 </script>
 </head>
 <body>
@@ -67,47 +72,31 @@
 			</nav>
 <header>
 	<div class="subheading">
-	<a href="lessons.html">Lessons</a>
-	<div class="subnav">
-		<ul>
-			<li><a href="lesson_one.html">Lesson 1</a></li>
-			<li><a href="lesson_two.html">Lesson 2</a></li>
-			<li><a href="lesson_three.html">Lesson 3</a></li>
-			<li><a href="#">Lesson 4</a></li>
-			<li><a href="#">Lesson 5</a></li>
-			<li><a href="#">Lesson 6</a></li>
-			<li><a href="#">Lesson 7</a></li>
-			<li><a href="#">Lesson 8</a></li>
-			<li><a href="#">Lesson 9</a></li>
-			<li><a href="#">Lesson 10</a></li>
-			<li><a href="#">Lesson 11</a></li>
-			<li><a href="#">Lesson 12</a></li>
-		</ul>
-	</div>
+	<a href="contact.html">Contact</a>
 	</div>
 </header>
-<main>
+	<main>
 	<section>
 	<div class="left">
-		<img src="images/lessons.jpg" alt="Lesson Background">
+		<h2>Contact Information</h2>
+		<p>Michael Whyte</p>
+		<a href="mailto:michael_whyte@bcit.ca">michael_whyte@bcit.ca</a>
 	</div>
 	<div class="right">
-				<h1>Lessons</h1>
-				<p>Click on the lesson to see notes</p>
-				<ul>
-					<li><a href="lesson_one.html">Lesson 1</a></li>
-					<li><a href="lesson_two.html">Lesson 2</a></li>
-					<li><a href="lesson_three.html">Lesson 3</a></li>
-					<li><a href="#">Lesson 4</a></li>
-					<li><a href="#">Lesson 5</a></li>
-					<li><a href="#">Lesson 6</a></li>
-					<li><a href="#">Lesson 7</a></li>
-					<li><a href="#">Lesson 8</a></li>
-					<li><a href="#">Lesson 9</a></li>
-					<li><a href="#">Lesson 10</a></li>
-					<li><a href="#">Lesson 11</a></li>
-					<li><a href="#">Lesson 12</a></li>
-				</ul>
+				<form>
+					<input type="text" name="firstname" placeholder="First Name" required="required" pattern="[A-Za-z0-9]{1,20}">
+					<br>
+					<input type="text" name="lastname" placeholder="Last Name" required="required" pattern="[A-Za-z0-9]{1,20}">
+					<br>
+					<input type="email" name="email" placeholder="Email" required="required">
+					<br>
+					<input type="text" name="studentnumber" placeholder="Student Number" minlength="9" maxlength="10" pattern="A.+">
+					<br>
+					<input type="radio" name="studenttype" value="prospective" checked=""> Prospective Student
+  					<input type="radio" name="studenttype" value="current"> Current Student
+					<br>
+					<input onsubmit="myFunction()" type="submit" value="Submit">
+				</form>
 		</div>
 	</section>
 	<footer>

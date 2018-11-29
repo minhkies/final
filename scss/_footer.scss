@@ -1,0 +1,56 @@
+footer {
+	background-color: lightgray;
+	width: 100%;
+	z-index: -100;
+	padding-bottom: 0;
+	display: flex;
+	flex-direction: column;
+	img{
+		display: block;
+	    margin: 2vh auto;
+	    padding-top: 3vh;
+		height: 25vh;
+	}
+	h1{
+		text-align: center;
+		@include heading;
+		
+		line-height: 90%;
+	}
+	p{
+		color: black;
+		margin: 10vh 0;
+		text-align: center;
+		color: black;
+	}
+	.subfooter {
+		font-size: 8pt;
+		padding: 0;
+		margin: 0;
+		display: inline-block;
+		height: 10vh;
+		line-height: 10vh;
+		opacity: 0.5;
+		width: 100%;
+		background: black;
+		color: white;
+	}
+}
+
+@media only screen and (max-device-width : 768px) {
+	img{
+		max-height: 20vh;
+	}
+	h1{
+		font-size: 16pt;
+	}
+}
+
+@media only screen and (max-device-width : 425px) {
+	img{
+		max-height: 15vh;
+	}
+	h1{
+		font-size: 12pt;
+	}
+}

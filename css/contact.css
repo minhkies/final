@@ -193,44 +193,42 @@ body {
   body main {
     position: absolute;
     top: 50vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%; }
+    z-index: -10; }
     body main section {
-      align-self: stretch;
-      width: 100%;
+      max-width: 100%;
       display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: 5vh 5vh 5vh auto 5vh; }
-      body main section .title {
-        z-index: 1;
-        grid-column: 3/9;
-        grid-row: 2/4;
-        background-color: #EA8024;
+      grid-template-columns: repeat(2, 1fr); }
+      body main section .left {
+        grid-column: 1/2;
+        background: black;
         color: white;
-        padding: 5vh; }
-        body main section .title h1 {
+        padding: 10vh 10vw; }
+        body main section .left a {
+          text-decoration: none;
+          color: white; }
+        body main section .left h2 {
           font-family: 'Josefin Sans', sans-serif;
-          font-size: 28pt; }
-      body main section .content {
-        z-index: 0;
-        grid-column: 2/12;
-        grid-row: 3/5;
-        padding: 50px 20px;
-        background-color: #DDE6ED; }
-        body main section .content a {
-          text-decoration: none; }
-        body main section .content h2 {
-          padding-top: 5vh; }
-        body main section .content p {
-          padding: 1vh 2vh; }
-        body main section .content p + ul, body main section .content ol {
-          margin-top: -8px; }
-        body main section .content .photo {
-          max-width: 50vw;
-          height: auto;
-          margin: 0 auto;
-          display: block; }
+          font-size: 30pt; }
+      body main section .right {
+        grid-column: 2/3;
+        padding: 5vh 5vw; }
+        body main section .right form input[type=text], body main section .right form input[type=email] {
+          width: 100%;
+          height: 5vh;
+          border: none;
+          padding: 0.5vh; }
+        body main section .right form input[type=radio] {
+          margin: 1.5vh; }
+        body main section .right form input[type=submit] {
+          background: #EA8024;
+          color: white;
+          width: 100%;
+          border: none;
+          height: 6vh;
+          margin: 5vh 0; }
     body main footer {
       background-color: lightgray;
       width: 100%;
@@ -275,32 +273,12 @@ body {
       body main h1 {
         font-size: 12pt; } }
 
-@media only screen and (max-device-width: 1200px) {
-  .subnav {
-    visibility: hidden; }
-
-  body main section .title {
-    grid-column: 2/12; }
-    body main section .title h1 {
-      font-size: 28pt; }
-  body main section .content {
-    grid-column: 1/13; } }
-@media only screen and (max-device-width: 775px) {
+@media only screen and (max-device-width: 840px) {
   .subnav {
     visibility: hidden; }
 
   body main section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto; }
-    body main section .title {
-      z-index: 1;
-      grid-column: 1/2;
-      grid-row: 1/2; }
-      body main section .title h1 {
-        font-size: 20pt; }
-    body main section .content {
-      grid-column: 1/2;
-      grid-row: 2/3s; } }
+    display: flex;
+    flex-direction: column; } }
 
-/*# sourceMappingURL=lesson_content.css.map */
+/*# sourceMappingURL=contact.css.map */

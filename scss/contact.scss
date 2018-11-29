@@ -1,0 +1,81 @@
+$orange: #EA8024;
+body, h1, h2, p{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: white;
+	max-width: 100%;
+	overflow-x: hidden;
+	@import 'navbar';
+	@import 'header';
+	main {
+		position: absolute;
+		top: 50vh;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		z-index: -10;
+		section{
+			max-width: 100%;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			.left{
+				grid-column: 1/2;
+				background: black;
+				color: white;
+				padding: 10vh 10vw;
+				a{
+					text-decoration: none;
+					color: white;
+				}
+				h2{
+					font-family: 'Josefin Sans', sans-serif;
+					font-size: 30pt;
+				}
+			}
+			.right{
+				grid-column: 2/3;
+				padding: 5vh 5vw;
+				form{
+					input[type=text], input[type=email] {
+						width: 100%;
+						height: 5vh;
+						border: none;
+						padding: 0.5vh;
+					}
+					input[type=radio] {
+						margin: 1.5vh;
+					}
+					input[type=submit] {
+						background: $orange;
+						color: white;
+						width: 100%;
+						border: none;
+						height: 6vh;
+						margin: 5vh 0;
+					}
+				}
+			}
+		}
+		@import 'footer';
+	}
+}
+
+@media only screen and (max-device-width : 840px) {
+	.subnav{
+		visibility: hidden;
+	}
+	body{
+		main{
+			section{
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
+}
+
+
+
