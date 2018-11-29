@@ -21,6 +21,9 @@ $orange: #EA8024;
 			transition: .3s;
 		}
 		& a {
+			@media only screen and(max-width: 650px) {
+			font-size: 1.0rem;
+			}
 			text-decoration: none;
 			display: inline-block;
 			line-height: 8vh;
@@ -102,22 +105,3 @@ header {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
